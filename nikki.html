@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--
+        ピヨピヨ
+　　γ⌒ヽ
+　　/ ･◇･)
+　∈ノ　／
+　＿_Ｗ~＿
+
+ﾐﾃﾝｼﾞｬﾈｰﾖ
+　　〃⌒ヽ
+　　/ ･◇･)
+　∈_ﾉ＿／
+　　 ┛┗
+-->
+<audio src="music/ひらひらチョウチョ.mp3" autoplay loop></audio>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>ぼくのページ（仮）</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+        function showMore(btn) {
+           var targetId = btn.getAttribute("href").slice(1);          // 表示対象のid名をhref属性値から得る
+           document.getElementById(targetId).style.display = "block"; // 表示対象の非表示状態を解除
+           btn.parentNode.style.display = "none";                     // 続きを読むボタンを消す
+           return false;                                                        // リンクとして機能しないようfalseを返す
+        }
+        </script>
+</head>
+
+<body oncontextmenu="alert('右クリックは禁止です！');return false">
+
+    <header>
+        <center>
+            <table border="6" bordercolor="red" width="500">
+                    <td>
+                        <marquee>
+                                ようこそ　僕の日記へ
+                        </marquee>
+                    </td>
+            </table>
+        </center>
+    </header>
+    <div class="box3">
+    <a href="index.html"><img src="img/home.png" alt="ホーム"><a href="keijiban.php"><img src="img/keijiban.png" alt="掲示板"></a> </a> <a href="profire.html"><img src="img/profire.png" alt="プロフィール"></a> <a href="link.html"><img src="img/link.png" alt="リンク集"></a>
+    </div>
+    <iframe src="blog/2019-6-20.html" width="90%" height="400"></iframe>
+    
+    <iframe src="blog/2019-6-6.html" width="90%" height="400"></iframe>
+
+    <iframe src="blog/2019-5-23.html" width="90%" height="400"></iframe>
+
+    <iframe src="blog/2019-5-8.html" width="90%" height="400"></iframe>
+   
+    
+</body>
+
+</html>

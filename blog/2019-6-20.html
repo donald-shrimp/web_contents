@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <title>ぼくのページ（仮）</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/readmore.js"></script>
+<script>
+jQuery(function () {
+    $('.open').readmore({
+        speed: 750,
+        collapsedHeight: 105,
+        moreLink: '<a class="btn" href="#"><span>続きを読む</span></a>',//続きを読むボタンタグ
+        lessLink: '<a class="btn_close" href="#"><span>閉じる</span></a>'//閉じるボタンタグ
+    });
+});
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/readmore.js"></script>
+<!-- 下記 Readmore.js 実行文 -->
+<script>
+	$(function () {
+		$('.open').readmore();
+	});
+</script>
+<!-- 下記 Readmore.js 実行文 -->
+</head>
+
+<body oncontextmenu="alert('右クリックは禁止です！');return false">
+
+<div class="box3">
+    
+    <h3>【おいしかったです】チーズピザをたべたよ</h3>
+    <div class="open">
+        きのうは、カズ之助くんのおうちでウルトラチーズピザをたべました。<br>
+        <img src="bimg/pizza.jpg" alt="実はチーズナンかもしれない" width="300"><br>
+        ↑ウルトラチーズピザ（3832kcal）<br>
+        とーーーーーーーーーーーーーーーーーーーーーーーーってもおいしかったです。<br>
+        またたべたいなとおもいました。<br>
+        とくに、チーズの味がするところがおいしいとおもいました。よかったです。<br>
+        全然関係ないけれどサンタさん、前払いで現金１０万円のプレゼントください<br>
+
+    </div>
+    </div>
+    </body>
+    </html>

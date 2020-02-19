@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello HTML</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<script type="text/javascript" src="../js/script2.js"></script>
+
+<body　onload="alert('unchi')">
+
+    <!--マウスオーバーの時ボタンの文字が変わる-->
+    <input type="button" value="mouseover" onmouseover="this.value='kasanari'" onmouseout="this.value='mouseover'">
+
+    <!--ボタンを押したときだけ文字が変わる-->
+    <input type="button" value="押せ" onmousedown="this.value='down'" onmouseup="this.value='押せ'">
+
+    <!--unchi alert button-->
+    <input type="button" value="クリック！" onclick="alert('うんち')">
+
+    <!--テキストボックス-->
+    <input type="text" id="num"><br>
+
+    <!--クリックで4の2倍が出力-->
+    <input type="button" value="2倍" onclick="alert(x2(num.value))">
+
+    <!--クリックで8の2倍が出力-->
+    <input type="button" value="2乗" onclick="alert(suqare(num.value))">
+
+</body>
+
+</html>

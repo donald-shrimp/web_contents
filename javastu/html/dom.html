@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<script type="text/javascript" src="../js/script7.js"></script>
+
+<body>
+    <div>block1</div>
+    <div>block2</div>
+    <div id="block3">block3</div>
+
+    <!--クリックで二つ目のdivの中身が表示される-->
+    <input type="button" value="div2" onclick="alert(document.getElementsByTagName('div')[1].childNodes[0].nodeValue)">
+    <!--クリックで3つ目のdivの中身が表示される-->
+    <input type="button" value="div3" onclick="alert(document.getElementById('block3').childNodes[0].nodeValue)">
+
+    <!--書き換え-->
+    <div class="rewriting">
+
+        <!--何番目のdivを書き換えるのか-->
+        何個目？（1~3まで）<input type="text" id="num">
+        <br>
+
+        <!--どんなデータに書き換えるか-->
+        データは？<input type="text" id="data">
+        <br>
+
+        <!--クリックすると書き換え-->
+        <input type="button" value="書き換え" onclick="rewriting(num.value,data.value)">
+
+    </div>
+</body>
+
+</html>

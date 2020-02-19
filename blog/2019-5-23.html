@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta http-equiv="content-type" charset="utf-8">
+    <title>ぼくのページ（仮）</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/readmore.js"></script>
+<script>
+jQuery(function () {
+    $('.open').readmore({
+        speed: 750,
+        collapsedHeight: 105,
+        moreLink: '<a class="btn" href="#"><span>続きを読む</span></a>',//続きを読むボタンタグ
+        lessLink: '<a class="btn_close" href="#"><span>閉じる</span></a>'//閉じるボタンタグ
+    });
+});
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/readmore.js"></script>
+<!-- 下記 Readmore.js 実行文 -->
+<script>
+	$(function () {
+		$('.open').readmore();
+	});
+</script>
+<!-- 下記 Readmore.js 実行文 -->
+</head>
+
+<body oncontextmenu="alert('右クリックは禁止です！');return false">
+
+<div class="box3">
+    
+    <h3>やることなくなってきちゃった</h3>
+    <div class="open">
+    <p>     
+    マジで何もない。ここにこんなことを書いて暇つぶしするくらいしかない。<br>
+    嘘。ほんとはある。やりたいけど技術力が伴ってなくてできないだけ。<br>
+    今日は朝からカレーを食べたのでとても元気です。<br>
+    嘘。本当は今朝食べたのは昨日の残りのチャーハン。<br>
+    明日も暇なので今かな何をするかで悩んでいます。何をしようかな。<br>
+    嘘。本当は明日タコパをやることを決めていたので暇じゃない。<br>
+    今日の日記はここまでにしようかな。<br>
+    嘘。まだ続ける。<br>
+    それも嘘。もうやめる。
+    </p>
+</div>
+
+ 
+   
+</div>
+</body>
+</html>
